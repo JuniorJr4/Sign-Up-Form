@@ -187,28 +187,41 @@ p {
     font-size: 12px;
 }
 
+.bobbie {
+    height: auto;
+    width:100%;
+}
 .img-banner {
-    position: absolute;
-    height: 100px;
-    width: 382px;
+    height: 150px;
+    width: auto;
     background-color: black;
     opacity: .35;
+    
 }
 
-img-container {
+.img-container {
+    height: auto;
     width: 382px;
+    background-image: url('./images/bob-main.JPG');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .headline {
     position: absolute;
     background-color: transparent;
-    width: 382px;
     top: 50px;
+}
+
+.form-headline {
+    width: 75%;
 }
 
 .page-container {
     display: flex;
-    justify-content: flex-start;
+    
+    
 }
 
 .name {
@@ -220,7 +233,7 @@ img-container {
 .names {
     display: flex;
     background-color: #E5E7EB;
-    padding: 40px;
+    padding: 15px 0 15px 30px;
     gap: 40px;
     font-size: 18px;
 }
@@ -242,7 +255,6 @@ input {
 .form-container {
     display: flex;
     flex-direction: column;
-    
     color: #1F2937;
     
 }
@@ -252,12 +264,16 @@ input {
     align-items: center;
 }
 
-.form-headline, .btn-container, footer {
-    padding: 40px;
+.form-headline, .btn-container, .login {
+    padding: 20px 0 0 30px;
+}
+
+.login {
+    color: black;
 }
 
 form {
-    width: auto;
+   width: 60vw;
 }
 
 input:focus {
