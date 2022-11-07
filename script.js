@@ -4,6 +4,7 @@ const submitBtn = document.querySelector(".submit");
 const errorMsg = document.querySelector(".error");
 
 let password1, password2;
+let pwdsMatch = false;
 
 pass1.addEventListener("input", () => {
   console.log(password1);
@@ -12,6 +13,7 @@ pass1.addEventListener("input", () => {
     ? ((pass1.style.outline = "2px solid rgb(0, 175, 0)"),
       (pass2.style.outline = "2px solid rgb(0, 175, 0)"),
       (submitBtn.style.opacity = "1.0"),
+      (pwdsMatch = true),
       (submitBtn.style.pointerEvents = "auto"))
     : ((pass1.style.outline = "2px solid rgb(255, 73, 73)"),
       (pass2.style.outline = "2px solid rgb(255, 73, 73)"),
@@ -27,6 +29,7 @@ pass2.addEventListener("input", () => {
     ? ((pass1.style.outline = "2px solid rgb(0, 175, 0)"),
       (pass2.style.outline = "2px solid rgb(0, 175, 0)"),
       (submitBtn.style.opacity = "1.0"),
+      (pwdsMatch = true),
       (submitBtn.style.pointerEvents = "auto"),
       (errorMsg.textContent = "Passwords match"))
     : ((pass1.style.outline = "2px solid rgb(255, 73, 73)"),
