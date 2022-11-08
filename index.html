@@ -1,79 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="script" href="script.js" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
     <title>Bobbie</title>
-</head>
+  </head>
 
-<body>
-    <header class="header">
-        <h2>Bobbie Kitty</h2>
-        <nav class="right-links">
-            <a href="#">About</a>
-            <a href="#">Store</a>
-            <a href="#">Secret</a>
-        </nav>
-    </header>
-    <main>
-        <div class="intro">
-            <div class="left-intro">
-                <h1 class="hero-title">BOBBIE</h1>
-                <p class="text">Having a bad day? Just take a peak at this cute girl
-                    and everything will be all right. Click below for more.</p>
-                <div class="button">
-                    <button>Click Here</button>
+  <body>
+    <div class="page-container">
+      <div class="img-container">
+        <div class="img-banner"><h2 class="headline">Bobbie</h2></div>
+      </div>
+      <div class="right">
+        <div class="form-headline">
+          <p class="form-caption">
+            This is not a legitimate inscription site, enter at your own risk.
+            Signing up doesn't sign you up for anything. Sign up for Bobbie
+            facts now!
+          </p>
+          <h3 class="title">You Know You Want To</h3>
+          <p class="req">All fields are required</p>
+        </div>
+        <div class="form-background">
+          <form action="#">
+            <div class="form-container">
+              <div class="names">
+                <div class="fname">
+                  <label for="name">First Name</label>
+                  <input
+                    type="text"
+                    class="inp"
+                    id="name"
+                    placeholder="First Name"
+                    required
+                  />
                 </div>
+                <div class="lname">
+                  <label for="surname">Last Name</label>
+                  <input
+                    type="text"
+                    class="inp"
+                    id="surname"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+                <div class="email">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="inp"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="telnumb">
+                  <label for="tel">Telephone Number</label>
+                  <input
+                    type="tel"
+                    class="inp"
+                    id="tel"
+                    placeholder="Telephone Number"
+                    required
+                  />
+                </div>
+                <div class="pass">
+                  <label for="pwd">Password</label>
+                  <input type="password" name="pwd" id="pwd" required />
+                  <span class="error"></span>
+                </div>
+                <div class="pass2">
+                  <label for="pwd2">Confirm Password</label>
+                  <input type="password" name="pwd2" id="pwd2" required />
+                </div>
+              </div>
             </div>
-            <img src="images/bob1.jpg" alt="bobbie">
-        </div>
-        <div class="card-section">
-            <h1 class="card-title">Bobbie In Action</h1>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/bob2.JPG" alt="bobbie">
-                    <p class="card-text">Tucked in Kitty</p>
-                </div>
-                <div class="card">
-                    <img src="images/bob3.JPG" alt="bobbie">
-                    <p class="card-text">Not Too Sure</p>
-                </div>
-                <div class="card">
-                    <img src="images/bob4.JPG" alt="bobbie">
-                    <p class="card-text">Just Look at Her</p>
-                </div>
-                <div class="card">
-                    <img src="images/bob6.jpg" alt="bobbie">
-                    <p class="card-text">Hammock Time</p>
-                </div>
+            <div class="btn-container">
+              <button type="submit" class="submit">Submit</button>
             </div>
+          </form>
         </div>
-        <div class="quote">
-            <p class="quote-text">You miss 100% of the shots you don't take.</p>
-            <p class="wayne">-Wayne Gretzky</p>
-            <p class="mike">-Michael Scott</p>
-        </div>
-        <div class="bottom">
-            <div class="container">
-                <div class="bottom-left">
-                    <p class="allez">Need more Bobbie in your life? Don't blame you.</p>
-                    <p class="button-desc">Sign up now for daily Bobbie content.</p>
-                </div>
-                <div class="bottom-right">
-                    <button>Sign Up!</button>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <p>Copyright etc.</p>
+        <footer class="login">
+          <p class="acct">Already have an account?  <a href="#" class="login">Login</a></p>
         </footer>
-
-    </main>
-</body>
-
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
